@@ -1,9 +1,0 @@
-name: "Allen's Data Science Space"
-output_dir: "."
-navbar:
-  title: "Allen's website"
-  left:
-    - text:"Home"
-      href: index.html
-    - text: "About"
-      href: about.html
