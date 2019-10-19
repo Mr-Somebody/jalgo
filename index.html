@@ -1,23 +1,230 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
 
-  <h1 class="page-heading">文章列表</h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <title>欢迎来到健康小屋</title>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-  <p class="rss-subscribe">订阅AAAA：<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-</div>
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">健康小屋</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#infant">婴儿</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#child">儿童</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#pregnant">孕妇</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#woman">女士</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#man">男士</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#aged">老年</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">强壮的身体是革命的本钱</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">满足您的需求是我们的追求，您的健康是我们的首位</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">联系我们</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">扫码进群（备注：健康小屋）</h2>
+          <hr class="divider light my-4">
+          <img class="img-fluid" src="img/health-house-qrcode.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infant Section -->
+  <section id="infant" class="portfolio">
+    <div class="container">
+      <h2 class="text-center mt-0">婴儿</h2>
+      <hr class="divider my-4">
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/infant/milk/a2.jpeg">
+            <img class="img-thumbnail img-fluid" src="img/infant/milk/a2.jpeg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                奶粉
+              </div>
+              <div class="project-name">
+                A2
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/infant/milk/aptmil-profutura.jpeg">
+            <img class="img-thumbnail img-fluid" src="img/infant/milk/aptmil-profutura.jpeg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                奶粉
+              </div>
+              <div class="project-name">
+                爱他美白金
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/infant/milk/aptmil-gold.jpeg">
+            <img class="img-thumbnail img-fluid" src="img/infant/milk/aptmil-gold.jpeg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                奶粉
+              </div>
+              <div class="project-name">
+                爱他美黄金
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Child Section -->
+  <section id="child" class="portfolio">
+    <div class="container">
+      <h2 class="text-center mt-0">儿童</h2>
+      <hr class="divider my-4">
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pregnant Section -->
+  <section id="pregnant" class="portfolio">
+    <div class="container">
+      <h2 class="text-center mt-0">孕妇</h2>
+      <hr class="divider my-4">
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+      </div>
+    </div>
+  </section>
+
+  <!-- Woman Section -->
+  <section id="woman" class="portfolio">
+    <div class="container">
+      <h2 class="text-center mt-0">女士</h2>
+      <hr class="divider my-4">
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+      </div>
+    </div>
+  </section>
+
+  <!-- Man Section -->
+  <section id="man" class="portfolio">
+    <div class="container">
+      <h2 class="text-center mt-0">男士</h2>
+      <hr class="divider my-4">
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+      </div>
+    </div>
+  </section>
+
+  <!-- Aged Section -->
+  <section id="aged" class="portfolio">
+    <div class="container">
+      <h2 class="text-center mt-0">老年</h2>
+      <hr class="divider my-4">
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="page-section bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">没有找到想要的？扫码直接咨询</h2>
+      <a class="btn btn-light btn-xl" href="#about">点击扫码</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - 健康小屋</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
